@@ -1,0 +1,90 @@
+{
+  "name": "@shopify/cli",
+  "version": "1.0.9",
+  "private": false,
+  "description": "A CLI tool to build for the Shopify platform",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "keywords": [
+    "shopify",
+    "shopify-cli",
+    "shopify-partners"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "shopify": "./bin/run.js"
+  },
+  "files": [
+    "/bin/run.cmd",
+    "/bin/run.js",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "build": "rimraf dist/ && rollup -c",
+    "prepack": "cross-env NODE_ENV=production yarn run build",
+    "lint": "prettier -c src/** && eslint 'src/**/*.ts'",
+    "lint:fix": "prettier -w src/** && eslint 'src/**/*.ts' --fix",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "tsc": "tsc --noEmit"
+  },
+  "eslintConfig": {
+    "extends": [
+      "../../.eslintrc.cjs"
+    ]
+  },
+  "dependencies": {
+    "@bugsnag/js": "^7.16.2",
+    "@oclif/core": "1.6.4",
+    "@oclif/plugin-help": "^5.1.12",
+    "@oclif/plugin-plugins": "^2.1.0",
+    "@shopify/cli-kit": "1.0.9"
+  },
+  "devDependencies": {
+    "vitest": "0.8.1"
+  },
+  "engine-strict": true,
+  "engines": {
+    "node": "^14.13.1 || ^16.0.0 || ^17.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "oclif": {
+    "bin": "shopify",
+    "commands": "dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@shopify/app",
+      "@shopify/cli-hydrogen",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "hydrogen": {
+        "description": "Build Hydrogen storefronts"
+      },
+      "theme": {
+        "description": "Build Liquid themes"
+      },
+      "app": {
+        "description": "Build Shopify apps"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "hash": "67b9c217",
+  "browserHash": "8a4af094",
+  "optimized": {
+    "@headlessui/react": {
+      "src": "../../@headlessui/react/dist/headlessui.esm.js",
+      "file": "@headlessui_react.js",
+      "fileHash": "b990c4a8",
+      "needsInterop": false
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "652932c0",
+      "needsInterop": true
+    },
+    "react-helmet-async": {
+      "src": "../../react-helmet-async/lib/index.module.js",
+      "file": "react-helmet-async.js",
+      "fileHash": "a1da7065",
+      "needsInterop": false
+    },
+    "react-error-boundary": {
+      "src": "../../react-error-boundary/dist/react-error-boundary.esm.js",
+      "file": "react-error-boundary.js",
+      "fileHash": "0b061e51",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "de703bf6",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "445200cf",
+      "needsInterop": true
+    },
+    "react-server-dom-vite/client-proxy": {
+      "src": "../../@shopify/hydrogen/vendor/react-server-dom-vite/esm/react-server-dom-vite-client-proxy.js",
+      "file": "react-server-dom-vite_client-proxy.js",
+      "fileHash": "cd97571d",
+      "needsInterop": false
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "e639eaa3",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-WRUK53JR": {
+      "file": "chunk-WRUK53JR.js"
+    },
+    "chunk-ZFTXHV63": {
+      "file": "chunk-ZFTXHV63.js"
+    }
+  }
+}

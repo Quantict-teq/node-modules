@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.STOREFRONT_API_BUYER_IP_HEADER = exports.STOREFRONT_API_PUBLIC_TOKEN_HEADER = exports.STOREFRONT_API_SECRET_TOKEN_HEADER = exports.OXYGEN_SECRET_TOKEN_ENVIRONMENT_VARIABLE = exports.EVENT_PATHNAME_REGEX = exports.EVENT_PATHNAME = exports.RSC_PATHNAME = void 0;
+exports.RSC_PATHNAME = '/__rsc';
+exports.EVENT_PATHNAME = '/__event';
+exports.EVENT_PATHNAME_REGEX = new RegExp(`^${exports.EVENT_PATHNAME}\/`);
+exports.OXYGEN_SECRET_TOKEN_ENVIRONMENT_VARIABLE = 'SHOPIFY_STOREFRONT_API_SECRET_TOKEN';
+exports.STOREFRONT_API_SECRET_TOKEN_HEADER = 'Shopify-Storefront-Private-Token';
+exports.STOREFRONT_API_PUBLIC_TOKEN_HEADER = 'X-Shopify-Storefront-Access-Token';
+exports.STOREFRONT_API_BUYER_IP_HEADER = 'Shopify-Storefront-Buyer-IP';

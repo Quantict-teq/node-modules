@@ -1,0 +1,10 @@
+import type { CachingStrategy, AllCacheOptions, NoStoreStrategy } from '../../types';
+export declare function generateCacheControlHeader(cacheOptions: CachingStrategy): string;
+export declare function NoStore(): NoStoreStrategy;
+export declare function CacheSeconds(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheMinutes(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheHours(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheDays(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheWeeks(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheMonths(overrideOptions?: CachingStrategy): AllCacheOptions;
+export declare function CacheCustom(overrideOptions: CachingStrategy): AllCacheOptions;

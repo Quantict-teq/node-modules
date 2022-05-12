@@ -1,0 +1,41 @@
+{
+  "name": "@shopify/stylelint-plugin",
+  "version": "10.2.0",
+  "license": "MIT",
+  "description": "Shopify's stylelint rules and config",
+  "keywords": [
+    "stylelint",
+    "stylelint-plugin",
+    "config",
+    "shopify",
+    "css"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/web-configs.git",
+    "directory": "packages/stylelint-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/Shopify/web-configs/issues"
+  },
+  "homepage": "https://github.com/Shopify/web-configs/blob/main/packages/stylelint-plugin/README.md",
+  "dependencies": {
+    "merge": "^2.1.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-order": "^4.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0"
+  },
+  "devDependencies": {
+    "stylelint": "^13.12.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=13.12.0"
+  },
+  "gitHead": "887ac8848f06a6eb33874c684b6aaafb0cb4b4ac"
+}
